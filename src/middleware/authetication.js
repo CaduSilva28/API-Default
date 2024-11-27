@@ -7,7 +7,7 @@ const authetication = (req, res, next) => {
     if(deUUID != apikey){
         return res.status(403).json({
             success: false,
-            message: "Chave de acesso inválida"
+            message: "Chave de acesso inválida!"
         });
     };
 
